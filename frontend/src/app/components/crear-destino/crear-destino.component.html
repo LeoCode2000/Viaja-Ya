@@ -1,0 +1,22 @@
+<h3 class="mt-6 text-center text-3xl font-extrabold text-gray-900">Crear destino</h3>
+<div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <form [formGroup]="destinoForm" (ngSubmit)="agregarDestino()">
+        <label for="fname">Nombre</label>
+        <input type="text" id="fname" formControlName="name">
+
+        <label for="subject">Descripción</label>
+        <textarea id="subject" formControlName="description"  style="height:200px"></textarea>
+
+        <label for="lname">Ubicación</label>
+        <input type="text" id="lname" formControlName="ubication">
+
+        <label for="lname">Precio</label>
+        <input type="text" id="lname" formControlName="price">
+
+        
+        <input [disabled]="destinoForm.invalid" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-400 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" type="submit" value="Crear">
+        <button routerLink="/top" class="mt-2 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-400 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            Cancelar 
+        </button>
+    </form>
+</div>
