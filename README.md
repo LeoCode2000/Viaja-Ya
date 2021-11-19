@@ -15,11 +15,11 @@ Ademas se requiere tener instalado mongodb y angular.
 
 Instala las dependencias y asegurate de configurar expo para que todo funcione correctamente
 
-$ cd ../backend
-$ npm install o yarn
-$ mongod y npm run start (dos terminales)
-$ cd ../frontend
-$ npm install o yarn 
-$ ng serve
+- $ cd ../backend
+- $ npm install o yarn
+- $ mongod y npm run start (dos terminales)
+- $ cd ../frontend
+- $ npm install o yarn 
+- $ ng serve
 
 Para acceder como admin use email: admin@admin.com password: admin1234 
